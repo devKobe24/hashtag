@@ -18,6 +18,7 @@
 		CD10E9042AF615AB001AF0E8 /* LocationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD10E9032AF615AB001AF0E8 /* LocationListView.swift */; };
 		CD10E9062AF615D9001AF0E8 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD10E9052AF615D9001AF0E8 /* ProfileView.swift */; };
 		CD10E90C2AF61679001AF0E8 /* SFSymbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD10E90B2AF61679001AF0E8 /* SFSymbols.swift */; };
+		CDD54DAD2AF65494003EF9CF /* ImageAssets.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD54DAC2AF65494003EF9CF /* ImageAssets.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		CD10E9032AF615AB001AF0E8 /* LocationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationListView.swift; sourceTree = "<group>"; };
 		CD10E9052AF615D9001AF0E8 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		CD10E90B2AF61679001AF0E8 /* SFSymbols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSymbols.swift; sourceTree = "<group>"; };
+		CDD54DAC2AF65494003EF9CF /* ImageAssets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageAssets.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +135,7 @@
 		CD10E9092AF61659001AF0E8 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				CDD54DAB2AF65481003EF9CF /* ImageAssets */,
 				CD10E90A2AF61661001AF0E8 /* SFSymbols */,
 			);
 			path = Common;
@@ -144,6 +147,14 @@
 				CD10E90B2AF61679001AF0E8 /* SFSymbols.swift */,
 			);
 			path = SFSymbols;
+			sourceTree = "<group>";
+		};
+		CDD54DAB2AF65481003EF9CF /* ImageAssets */ = {
+			isa = PBXGroup;
+			children = (
+				CDD54DAC2AF65494003EF9CF /* ImageAssets.swift */,
+			);
+			path = ImageAssets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,6 +227,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDD54DAD2AF65494003EF9CF /* ImageAssets.swift in Sources */,
 				CD10E8FF2AF61508001AF0E8 /* AppTabView.swift in Sources */,
 				CD10E9062AF615D9001AF0E8 /* ProfileView.swift in Sources */,
 				CD10E90C2AF61679001AF0E8 /* SFSymbols.swift in Sources */,
