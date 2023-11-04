@@ -23,6 +23,7 @@
 		CD10E8EB2AF5FE25001AF0E8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CD10E8ED2AF5FE25001AF0E8 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		CD10E8F02AF5FE25001AF0E8 /* Hashtag.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Hashtag.xcdatamodel; sourceTree = "<group>"; };
+		CD10E8F72AF5FFD2001AF0E8 /* Hashtag.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Hashtag.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +56,7 @@
 		CD10E8E32AF5FE24001AF0E8 /* Hashtag */ = {
 			isa = PBXGroup;
 			children = (
+				CD10E8F72AF5FFD2001AF0E8 /* Hashtag.entitlements */,
 				CD10E8E42AF5FE24001AF0E8 /* HashtagApp.swift */,
 				CD10E8E62AF5FE24001AF0E8 /* ContentView.swift */,
 				CD10E8E82AF5FE25001AF0E8 /* Assets.xcassets */,
@@ -277,6 +279,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Hashtag/Hashtag.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Hashtag/Preview Content\"";
@@ -307,6 +310,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Hashtag/Hashtag.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Hashtag/Preview Content\"";
