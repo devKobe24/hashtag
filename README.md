@@ -18,4 +18,4 @@
 
 | 날짜 | 진행 사항 |
 | -------- | -------- |
-| 23.11.04.(토)     | 앱 아이콘 초기 설정.</br>커스텀 색상 생성.</br>SFSymbols 열거형 생성 및 구현.</br>ContentView 삭제.</br>Color Extension 생성 및 구현.</br>|
+| 23.11.04.(토)     | 앱 아이콘 초기 설정.</br>커스텀 색상 생성.</br>SFSymbols 열거형 생성 및 구현.</br>ContentView 삭제.</br>Color Extension 생성 및 구현.</br>MapView 구현</br>이미지 로고 구현</br>ImageAsset 열거형 구현</br>|
