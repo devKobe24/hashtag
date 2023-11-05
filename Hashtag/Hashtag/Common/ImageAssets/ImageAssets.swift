@@ -9,6 +9,7 @@ enum ImageAssets {
     case hashtagMapLogo
     case hashTagSquareAsset
     case defaultAvatar
+    case hashtagBannerAsset
     
     var imageName: String {
         switch self {
@@ -18,6 +19,8 @@ enum ImageAssets {
             return "hashTag-square-asset"
         case .defaultAvatar:
             return "default-avatar"
+        case .hashtagBannerAsset:
+            return "hashtag-banner-asset"
         }
     }
 }
