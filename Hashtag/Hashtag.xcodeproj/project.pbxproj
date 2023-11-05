@@ -18,6 +18,7 @@
 		CD10E9042AF615AB001AF0E8 /* LocationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD10E9032AF615AB001AF0E8 /* LocationListView.swift */; };
 		CD10E9062AF615D9001AF0E8 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD10E9052AF615D9001AF0E8 /* ProfileView.swift */; };
 		CD10E90C2AF61679001AF0E8 /* SFSymbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD10E90B2AF61679001AF0E8 /* SFSymbols.swift */; };
+		CD4556C42AF7A2870034AD0B /* LocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4556C32AF7A2870034AD0B /* LocationCell.swift */; };
 		CDA88A772AF74C7C00680AD7 /* LocationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA88A762AF74C7C00680AD7 /* LocationDetailView.swift */; };
 		CDA88A792AF763FC00680AD7 /* CommonCircleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA88A782AF763FC00680AD7 /* CommonCircleButtonView.swift */; };
 		CDB5E6032AF7305700264CE8 /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB5E6022AF7305700264CE8 /* AvatarView.swift */; };
@@ -38,6 +39,7 @@
 		CD10E9032AF615AB001AF0E8 /* LocationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationListView.swift; sourceTree = "<group>"; };
 		CD10E9052AF615D9001AF0E8 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		CD10E90B2AF61679001AF0E8 /* SFSymbols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSymbols.swift; sourceTree = "<group>"; };
+		CD4556C32AF7A2870034AD0B /* LocationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCell.swift; sourceTree = "<group>"; };
 		CDA88A762AF74C7C00680AD7 /* LocationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailView.swift; sourceTree = "<group>"; };
 		CDA88A782AF763FC00680AD7 /* CommonCircleButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonCircleButtonView.swift; sourceTree = "<group>"; };
 		CDB5E6022AF7305700264CE8 /* AvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
@@ -74,8 +76,9 @@
 		CD10E8E32AF5FE24001AF0E8 /* Hashtag */ = {
 			isa = PBXGroup;
 			children = (
-				CD10E9092AF61659001AF0E8 /* Common */,
+				CD4556C62AF7A6510034AD0B /* Model */,
 				CD10E8FD2AF614F9001AF0E8 /* Views */,
+				CD4556C52AF7A6260034AD0B /* ViewModel */,
 				CD10E8F82AF6117F001AF0E8 /* Extensions */,
 				CD10E8F72AF5FFD2001AF0E8 /* Hashtag.entitlements */,
 				CD10E8E42AF5FE24001AF0E8 /* HashtagApp.swift */,
@@ -114,8 +117,8 @@
 		CD10E9002AF6150E001AF0E8 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
-				CD10E9072AF61607001AF0E8 /* Core */,
-				CD10E9082AF6160D001AF0E8 /* Sub */,
+				CD4556C72AF7A6860034AD0B /* CommonButtonView */,
+				CD4556C22AF7A26C0034AD0B /* Cell */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -134,9 +137,8 @@
 				CDB5E6022AF7305700264CE8 /* AvatarView.swift */,
 				CD10E9012AF6156E001AF0E8 /* LocationMapView.swift */,
 				CD10E9032AF615AB001AF0E8 /* LocationListView.swift */,
-				CD10E9052AF615D9001AF0E8 /* ProfileView.swift */,
 				CDA88A762AF74C7C00680AD7 /* LocationDetailView.swift */,
-				CDA88A782AF763FC00680AD7 /* CommonCircleButtonView.swift */,
+				CD10E9052AF615D9001AF0E8 /* ProfileView.swift */,
 			);
 			path = Sub;
 			sourceTree = "<group>";
@@ -156,6 +158,39 @@
 				CD10E90B2AF61679001AF0E8 /* SFSymbols.swift */,
 			);
 			path = SFSymbols;
+			sourceTree = "<group>";
+		};
+		CD4556C22AF7A26C0034AD0B /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				CD4556C32AF7A2870034AD0B /* LocationCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		CD4556C52AF7A6260034AD0B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CD10E9072AF61607001AF0E8 /* Core */,
+				CD10E9082AF6160D001AF0E8 /* Sub */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CD4556C62AF7A6510034AD0B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CD10E9092AF61659001AF0E8 /* Common */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CD4556C72AF7A6860034AD0B /* CommonButtonView */ = {
+			isa = PBXGroup;
+			children = (
+				CDA88A782AF763FC00680AD7 /* CommonCircleButtonView.swift */,
+			);
+			path = CommonButtonView;
 			sourceTree = "<group>";
 		};
 		CDD54DAB2AF65481003EF9CF /* ImageAssets */ = {
@@ -240,6 +275,7 @@
 				CD10E8FF2AF61508001AF0E8 /* AppTabView.swift in Sources */,
 				CDA88A772AF74C7C00680AD7 /* LocationDetailView.swift in Sources */,
 				CD10E9062AF615D9001AF0E8 /* ProfileView.swift in Sources */,
+				CD4556C42AF7A2870034AD0B /* LocationCell.swift in Sources */,
 				CD10E90C2AF61679001AF0E8 /* SFSymbols.swift in Sources */,
 				CDB5E6032AF7305700264CE8 /* AvatarView.swift in Sources */,
 				CDA88A792AF763FC00680AD7 /* CommonCircleButtonView.swift in Sources */,
