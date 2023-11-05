@@ -14,6 +14,7 @@ enum SFSymbols {
     case network
     case listClipboardFill
     case personFillCheckmark
+    case squareAndPencil
     
     var imageName: String {
         switch self {
@@ -33,6 +34,8 @@ enum SFSymbols {
             return "list.clipboard.fill"
         case .personFillCheckmark:
             return "person.fill.checkmark"
+        case .squareAndPencil:
+            return "square.and.pencil"
         }
     }
 }
