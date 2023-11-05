@@ -28,11 +28,11 @@ struct LocationListView: View {
                                 .minimumScaleFactor(0.75)
                             
                             HStack(content: {
-                                AvatarView()
-                                AvatarView()
-                                AvatarView()
-                                AvatarView()
-                                AvatarView()
+                                AvatarView(avatarViewSize: 35)
+                                AvatarView(avatarViewSize: 35)
+                                AvatarView(avatarViewSize: 35)
+                                AvatarView(avatarViewSize: 35)
+                                AvatarView(avatarViewSize: 35)
                             })
                             
                         })
