@@ -8,15 +8,36 @@
 import SwiftUI
 
 struct AvatarView: View {
+    
+    var avatarViewSize: CGFloat
+    var firstName: String?
+    
     var body: some View {
-        Image(ImageAssets.defaultAvatar.imageName)
-            .resizable()
-            .scaledToFit()
-            .frame(width: 35, height: 35)
-            .clipShape(Circle())
+        
+        VStack {
+            Image(ImageAssets.defaultAvatar.imageName)
+                .resizable()
+                .scaledToFit()
+                .frame(width: avatarViewSize, height: avatarViewSize)
+                .clipShape(Circle())
+            
+            
+            let firstName = generateFirstName(firstName: firstName)
+            Text(firstName)
+                .fontWeight(.bold)
+                .lineLimit(1)
+                .minimumScaleFactor(0.75)
+        }
+    }
+    
+    func generateFirstName(firstName: String?) -> String {
+        guard let firstName = firstName else {
+            return ""
+        }
+        return firstName
     }
 }
 
 #Preview {
-    AvatarView()
+    AvatarView(avatarViewSize: 35)
 }

@@ -10,5 +10,6 @@ import SwiftUI
 extension Color {
     #if os(iOS)
     static let brandPrimaryColor = Color("brandPrimary")
+    static let secondBrandPrimaryColor = Color("secondBrandPrimary")
     #endif
 }
