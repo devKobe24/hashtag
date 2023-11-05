@@ -18,6 +18,7 @@
 		CD10E9042AF615AB001AF0E8 /* LocationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD10E9032AF615AB001AF0E8 /* LocationListView.swift */; };
 		CD10E9062AF615D9001AF0E8 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD10E9052AF615D9001AF0E8 /* ProfileView.swift */; };
 		CD10E90C2AF61679001AF0E8 /* SFSymbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD10E90B2AF61679001AF0E8 /* SFSymbols.swift */; };
+		CDB5E6032AF7305700264CE8 /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB5E6022AF7305700264CE8 /* AvatarView.swift */; };
 		CDD54DAD2AF65494003EF9CF /* ImageAssets.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD54DAC2AF65494003EF9CF /* ImageAssets.swift */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +36,7 @@
 		CD10E9032AF615AB001AF0E8 /* LocationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationListView.swift; sourceTree = "<group>"; };
 		CD10E9052AF615D9001AF0E8 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		CD10E90B2AF61679001AF0E8 /* SFSymbols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSymbols.swift; sourceTree = "<group>"; };
+		CDB5E6022AF7305700264CE8 /* AvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
 		CDD54DAC2AF65494003EF9CF /* ImageAssets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageAssets.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -125,6 +127,7 @@
 		CD10E9082AF6160D001AF0E8 /* Sub */ = {
 			isa = PBXGroup;
 			children = (
+				CDB5E6022AF7305700264CE8 /* AvatarView.swift */,
 				CD10E9012AF6156E001AF0E8 /* LocationMapView.swift */,
 				CD10E9032AF615AB001AF0E8 /* LocationListView.swift */,
 				CD10E9052AF615D9001AF0E8 /* ProfileView.swift */,
@@ -231,6 +234,7 @@
 				CD10E8FF2AF61508001AF0E8 /* AppTabView.swift in Sources */,
 				CD10E9062AF615D9001AF0E8 /* ProfileView.swift in Sources */,
 				CD10E90C2AF61679001AF0E8 /* SFSymbols.swift in Sources */,
+				CDB5E6032AF7305700264CE8 /* AvatarView.swift in Sources */,
 				CD10E9042AF615AB001AF0E8 /* LocationListView.swift in Sources */,
 				CD10E8F12AF5FE25001AF0E8 /* Hashtag.xcdatamodeld in Sources */,
 				CD10E8FA2AF61191001AF0E8 /* Color+.swift in Sources */,
