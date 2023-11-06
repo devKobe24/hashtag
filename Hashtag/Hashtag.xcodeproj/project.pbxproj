@@ -35,6 +35,7 @@
 		CD4556F42AF8B6F40034AD0B /* RepresentativeMenuImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4556F32AF8B6F40034AD0B /* RepresentativeMenuImageView.swift */; };
 		CD4556F62AF8B88E0034AD0B /* MenuNameText.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4556F52AF8B88E0034AD0B /* MenuNameText.swift */; };
 		CD4556F82AF8BA2C0034AD0B /* Text+.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4556F72AF8BA2C0034AD0B /* Text+.swift */; };
+		CD4556FB2AF8CE570034AD0B /* MenuNameBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4556FA2AF8CE570034AD0B /* MenuNameBackgroundView.swift */; };
 		CDA88A772AF74C7C00680AD7 /* LocationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA88A762AF74C7C00680AD7 /* LocationDetailView.swift */; };
 		CDA88A792AF763FC00680AD7 /* CommonCircleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA88A782AF763FC00680AD7 /* CommonCircleButtonView.swift */; };
 		CDB5E6032AF7305700264CE8 /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB5E6022AF7305700264CE8 /* AvatarView.swift */; };
@@ -72,6 +73,7 @@
 		CD4556F32AF8B6F40034AD0B /* RepresentativeMenuImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepresentativeMenuImageView.swift; sourceTree = "<group>"; };
 		CD4556F52AF8B88E0034AD0B /* MenuNameText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuNameText.swift; sourceTree = "<group>"; };
 		CD4556F72AF8BA2C0034AD0B /* Text+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Text+.swift"; sourceTree = "<group>"; };
+		CD4556FA2AF8CE570034AD0B /* MenuNameBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuNameBackgroundView.swift; sourceTree = "<group>"; };
 		CDA88A762AF74C7C00680AD7 /* LocationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailView.swift; sourceTree = "<group>"; };
 		CDA88A782AF763FC00680AD7 /* CommonCircleButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonCircleButtonView.swift; sourceTree = "<group>"; };
 		CDB5E6022AF7305700264CE8 /* AvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
@@ -151,12 +153,12 @@
 		CD10E9002AF6150E001AF0E8 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				CD4556F92AF8CE320034AD0B /* CustomBackgroundViews */,
 				CD4556E82AF8633D0034AD0B /* CustomLabelView */,
 				CD4556E22AF860130034AD0B /* CustomTextViews */,
 				CD4556E12AF85FEC0034AD0B /* CustomImageViews */,
 				CD4556E02AF85FAF0034AD0B /* CustomTextFieldViews */,
 				CD4556DF2AF85F8B0034AD0B /* CustomButtonViews */,
-				CD4556CB2AF84B2F0034AD0B /* NameBackgroundView */,
 				CD4556C22AF7A26C0034AD0B /* Cells */,
 			);
 			path = CustomViews;
@@ -202,14 +204,6 @@
 				CD10E9092AF61659001AF0E8 /* Common */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		CD4556CB2AF84B2F0034AD0B /* NameBackgroundView */ = {
-			isa = PBXGroup;
-			children = (
-				CD4556CC2AF84B410034AD0B /* NameBackgroundView.swift */,
-			);
-			path = NameBackgroundView;
 			sourceTree = "<group>";
 		};
 		CD4556D12AF84DF80034AD0B /* Modifiers */ = {
@@ -287,6 +281,15 @@
 				CD4556F12AF895100034AD0B /* RepresentativeMenuView.swift */,
 			);
 			path = Sub;
+			sourceTree = "<group>";
+		};
+		CD4556F92AF8CE320034AD0B /* CustomBackgroundViews */ = {
+			isa = PBXGroup;
+			children = (
+				CD4556CC2AF84B410034AD0B /* NameBackgroundView.swift */,
+				CD4556FA2AF8CE570034AD0B /* MenuNameBackgroundView.swift */,
+			);
+			path = CustomBackgroundViews;
 			sourceTree = "<group>";
 		};
 		CDD54DAB2AF65481003EF9CF /* ImageAssets */ = {
@@ -379,6 +382,7 @@
 				CD4556F42AF8B6F40034AD0B /* RepresentativeMenuImageView.swift in Sources */,
 				CD10E90C2AF61679001AF0E8 /* SFSymbols.swift in Sources */,
 				CD4556F22AF895100034AD0B /* RepresentativeMenuView.swift in Sources */,
+				CD4556FB2AF8CE570034AD0B /* MenuNameBackgroundView.swift in Sources */,
 				CD4556EC2AF864810034AD0B /* StoreDescriptionView.swift in Sources */,
 				CDB5E6032AF7305700264CE8 /* AvatarView.swift in Sources */,
 				CD4556DA2AF8531B0034AD0B /* CommonNameTextField.swift in Sources */,

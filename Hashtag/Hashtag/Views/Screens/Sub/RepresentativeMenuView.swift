@@ -22,7 +22,7 @@ struct RepresentativeMenuView: View {
     }
     
     var menuImageNames: [String]
-    var menuNames: [String]
+    var imageWidth: CGFloat
     
     var body: some View {
         let count: Int = menuImageNames.count
@@ -37,10 +37,7 @@ struct RepresentativeMenuView: View {
                                 let menuImage = menuImageNames[index]
                                 Image(menuImage)
                                     .resizable()
-                                    .menuImageViewStyle(imageWidth: 250, scale: scale)
-                                let menuName = menuNames[index]
-                                Text(menuName)
-                                    .menuNameStyle()
+                                    .menuImageViewStyle(imageWidth: imageWidth, scale: scale)
                             })
                         })
                         .frame(width: 320, height: 420)
@@ -66,9 +63,7 @@ struct RepresentativeMenuView: View {
             "superMario",
             "superMario",
         ],
-        menuNames: [
-            "Super Mario Bros"
-        ]
+        imageWidth: 250
     )
 }
 
