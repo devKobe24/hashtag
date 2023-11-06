@@ -11,5 +11,6 @@ extension Color {
     #if os(iOS)
     static let brandPrimaryColor = Color("brandPrimary")
     static let secondBrandPrimaryColor = Color("secondBrandPrimary")
+    static let hashtagRedColor = Color("hashtagRed")
     #endif
 }
