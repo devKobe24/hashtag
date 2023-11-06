@@ -13,6 +13,37 @@ struct LocationDetailView: View {
         GridItem(.flexible()),
         GridItem(.flexible())
     ]
+    
+    let moviePosters = [
+        "avengers",
+        "besideColdAndPassion",
+        "blue",
+        "callByYourName",
+        "frozen",
+        "joker",
+        "lalaland",
+        "maleficent",
+        "parasite",
+        "superMario",
+        "toBusan"
+    ]
+    
+    let movieNames = [
+        "어벤저스",
+        "냉정과 열정 사이",
+        "블루",
+        "콜 바이 유 어 네임",
+        "겨울 왕국",
+        "조커",
+        "라라랜드",
+        "말레피센트",
+        "기생충",
+        "슈퍼 마리오",
+        "부산행",
+    ]
+    
+    @State private var showingPopover = false
+    
     var body: some View {
         VStack(spacing: 16) {
             BannerImageView(
@@ -59,8 +90,9 @@ struct LocationDetailView: View {
                         )
                     })
                     
+  
                     Button(action: {
-                        
+                        showingPopover = true
                     }, label: {
                         CommonCircleButtonView(
                             color: .secondBrandPrimaryColor,
@@ -68,7 +100,11 @@ struct LocationDetailView: View {
                             width: 23,
                             height: 33
                         )
-                    })
+                    }).popover(
+                        isPresented: $showingPopover,
+                        content: {
+                            RepresentativeMenuView(menuImageNames: moviePosters, menuNames: movieNames)
+                        })
                     
                     Button(action: {
                         
