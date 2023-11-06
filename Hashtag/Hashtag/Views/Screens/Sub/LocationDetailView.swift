@@ -28,20 +28,6 @@ struct LocationDetailView: View {
         "toBusan"
     ]
     
-    let movieNames = [
-        "어벤저스",
-        "냉정과 열정 사이",
-        "블루",
-        "콜 바이 유 어 네임",
-        "겨울 왕국",
-        "조커",
-        "라라랜드",
-        "말레피센트",
-        "기생충",
-        "슈퍼 마리오",
-        "부산행",
-    ]
-    
     @State private var showingPopover = false
     
     var body: some View {
@@ -103,7 +89,7 @@ struct LocationDetailView: View {
                     }).popover(
                         isPresented: $showingPopover,
                         content: {
-                            RepresentativeMenuView(menuImageNames: moviePosters, menuNames: movieNames)
+                            RepresentativeMenuView(menuImageNames: moviePosters, imageWidth: 250)
                         })
                     
                     Button(action: {
