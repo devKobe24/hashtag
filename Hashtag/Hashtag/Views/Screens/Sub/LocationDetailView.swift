@@ -15,25 +15,21 @@ struct LocationDetailView: View {
     ]
     var body: some View {
         VStack(spacing: 16) {
-            Image(ImageAssets.hashtagBannerAsset.imageName)
-                .resizable()
-                .scaledToFill()
-                .frame(height: 120)
+            BannerImageView(
+                bannerImageName: ImageAssets.hashtagBannerAsset.imageName
+            )
             
             HStack(content: {
-                Label("123 Main Street", systemImage: SFSymbols.mappinAndEllipse.imageName)
-                    .font(.caption)
-                    .foregroundStyle(.secondary)
+                AddressView(
+                    storeAddress: "Main Street 123",
+                    symbolImageName: SFSymbols.mappinAndEllipse.imageName
+                )
                 
                 Spacer()
             })
             .padding(.horizontal)
             
-            Text("This is a test description. This is a test description. This is a test description. This is a test description. This is a test description.")
-                .lineLimit(3)
-                .minimumScaleFactor(0.75)
-                .frame(height: 70)
-                .padding(.horizontal)
+            StoreDescriptionView(storeDescription: "This is the store description for testing purposes. Hello, our store sells very delicious food. The main menu is Korean food. welcome")
             
             ZStack(content: {
                 Capsule()

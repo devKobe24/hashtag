@@ -20,10 +20,12 @@ struct AppTabView: View {
                     Label("Locations",systemImage: SFSymbols.building.imageName)
                 }
             
-            ProfileView()
-                .tabItem {
-                    Label("Profile",systemImage: SFSymbols.person.imageName)
-                }
+            NavigationView(content: {
+                ProfileView()
+            })
+            .tabItem {
+                Label("Profile",systemImage: SFSymbols.person.imageName)
+            }
         }
         .tint(.brandPrimaryColor)
     }

@@ -26,10 +26,7 @@ struct LocationMapView: View {
                 .ignoresSafeArea()
             
             VStack {
-                Image(ImageAssets.hashtagMapLogo.imageName)
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 100, height: 70)
+                LogoView()
                 
                 Spacer()
             }

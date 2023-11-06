@@ -17,10 +17,7 @@ struct AvatarView: View {
         VStack {
             Image(ImageAssets.defaultAvatar.imageName)
                 .resizable()
-                .scaledToFit()
-                .frame(width: avatarViewSize, height: avatarViewSize)
-                .clipShape(Circle())
-            
+                .defaultAvatarImageViewStyle(avatarViewSize: avatarViewSize)
             
             let firstName = generateFirstName(firstName: firstName)
             Text(firstName)
@@ -39,5 +36,5 @@ struct AvatarView: View {
 }
 
 #Preview {
-    AvatarView(avatarViewSize: 35)
+    AvatarView(avatarViewSize: 90)
 }
