@@ -15,6 +15,7 @@ struct LocationDetailView: View {
     ]
     
     let moviePosters = [
+        "kimbab-square-asset",
         "avengers",
         "besideColdAndPassion",
         "blue",
@@ -89,7 +90,7 @@ struct LocationDetailView: View {
                     }).popover(
                         isPresented: $showingPopover,
                         content: {
-                            RepresentativeMenuView(menuImageNames: moviePosters, imageWidth: 250)
+                            RepresentativeMenuView(menuImageNames: moviePosters, imageWidth: 300)
                         })
                     
                     Button(action: {
