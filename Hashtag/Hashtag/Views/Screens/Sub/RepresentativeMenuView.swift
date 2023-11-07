@@ -29,7 +29,7 @@ struct RepresentativeMenuView: View {
         
         NavigationView(content: {
             ScrollView(.horizontal) {
-                HStack(content: {
+                HStack(spacing: 30, content: {
                     ForEach(0..<count) { index in
                         GeometryReader(content: { geometry in
                             VStack(content: {
@@ -40,7 +40,7 @@ struct RepresentativeMenuView: View {
                                     .menuImageViewStyle(imageWidth: imageWidth, scale: scale)
                             })
                         })
-                        .frame(width: 320, height: 420)
+                        .frame(width: 300, height: 300)
                     }
                 })
                 .padding(32)

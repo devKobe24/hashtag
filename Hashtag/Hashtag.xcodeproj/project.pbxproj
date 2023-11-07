@@ -36,6 +36,8 @@
 		CD4556F62AF8B88E0034AD0B /* MenuNameText.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4556F52AF8B88E0034AD0B /* MenuNameText.swift */; };
 		CD4556F82AF8BA2C0034AD0B /* Text+.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4556F72AF8BA2C0034AD0B /* Text+.swift */; };
 		CD4556FB2AF8CE570034AD0B /* MenuNameBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4556FA2AF8CE570034AD0B /* MenuNameBackgroundView.swift */; };
+		CD4556FD2AF9D15B0034AD0B /* HTLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4556FC2AF9D15B0034AD0B /* HTLocation.swift */; };
+		CD4557022AFA09A50034AD0B /* Support.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4557012AFA09A50034AD0B /* Support.swift */; };
 		CDA88A772AF74C7C00680AD7 /* LocationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA88A762AF74C7C00680AD7 /* LocationDetailView.swift */; };
 		CDA88A792AF763FC00680AD7 /* CommonCircleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA88A782AF763FC00680AD7 /* CommonCircleButtonView.swift */; };
 		CDB5E6032AF7305700264CE8 /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB5E6022AF7305700264CE8 /* AvatarView.swift */; };
@@ -74,6 +76,8 @@
 		CD4556F52AF8B88E0034AD0B /* MenuNameText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuNameText.swift; sourceTree = "<group>"; };
 		CD4556F72AF8BA2C0034AD0B /* Text+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Text+.swift"; sourceTree = "<group>"; };
 		CD4556FA2AF8CE570034AD0B /* MenuNameBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuNameBackgroundView.swift; sourceTree = "<group>"; };
+		CD4556FC2AF9D15B0034AD0B /* HTLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTLocation.swift; sourceTree = "<group>"; };
+		CD4557012AFA09A50034AD0B /* Support.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Support.swift; sourceTree = "<group>"; };
 		CDA88A762AF74C7C00680AD7 /* LocationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailView.swift; sourceTree = "<group>"; };
 		CDA88A782AF763FC00680AD7 /* CommonCircleButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonCircleButtonView.swift; sourceTree = "<group>"; };
 		CDB5E6022AF7305700264CE8 /* AvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
@@ -175,6 +179,7 @@
 		CD10E9092AF61659001AF0E8 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				CD4556FF2AFA097B0034AD0B /* Supports */,
 				CD4556D12AF84DF80034AD0B /* Modifiers */,
 				CDD54DAB2AF65481003EF9CF /* ImageAssets */,
 				CD10E90A2AF61661001AF0E8 /* SFSymbols */,
@@ -201,6 +206,7 @@
 		CD4556C62AF7A6510034AD0B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CD4556FE2AF9D15F0034AD0B /* Hashtag */,
 				CD10E9092AF61659001AF0E8 /* Common */,
 			);
 			path = Model;
@@ -292,6 +298,30 @@
 			path = CustomBackgroundViews;
 			sourceTree = "<group>";
 		};
+		CD4556FE2AF9D15F0034AD0B /* Hashtag */ = {
+			isa = PBXGroup;
+			children = (
+				CD4556FC2AF9D15B0034AD0B /* HTLocation.swift */,
+			);
+			path = Hashtag;
+			sourceTree = "<group>";
+		};
+		CD4556FF2AFA097B0034AD0B /* Supports */ = {
+			isa = PBXGroup;
+			children = (
+				CD4557002AFA098B0034AD0B /* HTLocation */,
+			);
+			path = Supports;
+			sourceTree = "<group>";
+		};
+		CD4557002AFA098B0034AD0B /* HTLocation */ = {
+			isa = PBXGroup;
+			children = (
+				CD4557012AFA09A50034AD0B /* Support.swift */,
+			);
+			path = HTLocation;
+			sourceTree = "<group>";
+		};
 		CDD54DAB2AF65481003EF9CF /* ImageAssets */ = {
 			isa = PBXGroup;
 			children = (
@@ -370,6 +400,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD4556FD2AF9D15B0034AD0B /* HTLocation.swift in Sources */,
 				CD4556E72AF8627D0034AD0B /* BannerImageView.swift in Sources */,
 				CDD54DAD2AF65494003EF9CF /* ImageAssets.swift in Sources */,
 				CD10E8FF2AF61508001AF0E8 /* AppTabView.swift in Sources */,
@@ -380,6 +411,7 @@
 				CD4556C42AF7A2870034AD0B /* LocationCell.swift in Sources */,
 				CD4556F82AF8BA2C0034AD0B /* Text+.swift in Sources */,
 				CD4556F42AF8B6F40034AD0B /* RepresentativeMenuImageView.swift in Sources */,
+				CD4557022AFA09A50034AD0B /* Support.swift in Sources */,
 				CD10E90C2AF61679001AF0E8 /* SFSymbols.swift in Sources */,
 				CD4556F22AF895100034AD0B /* RepresentativeMenuView.swift in Sources */,
 				CD4556FB2AF8CE570034AD0B /* MenuNameBackgroundView.swift in Sources */,
