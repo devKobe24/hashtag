@@ -20,13 +20,13 @@ struct HTLocation {
     
     init(record: CKRecord) {
         ckRecordID = record.recordID
-        address = record[Support.kAddress.propertyName] as? String
-        bannerAsset = record[Support.kBannerAsset.propertyName] as? CKAsset
-        location = record[Support.kLocation.propertyName] as? CLLocation
-        menuImages = record[Support.kMenuImages.propertyName] as? [CKAsset]
-        name = record[Support.kName.propertyName] as? String
-        squareAsset = record[Support.kSquareAsset.propertyName] as? CKAsset
-        storeDescription = record[Support.kStoreDescription.propertyName] as? String
-        webSiteURL = record[Support.kWebSiteURL.propertyName] as? String
+        address = record[HTLocationSupport.kAddress.propertyName] as? String
+        bannerAsset = record[HTLocationSupport.kBannerAsset.propertyName] as? CKAsset
+        location = record[HTLocationSupport.kLocation.propertyName] as? CLLocation
+        menuImages = record[HTLocationSupport.kMenuImages.propertyName] as? [CKAsset]
+        name = record[HTLocationSupport.kName.propertyName] as? String
+        squareAsset = record[HTLocationSupport.kSquareAsset.propertyName] as? CKAsset
+        storeDescription = record[HTLocationSupport.kStoreDescription.propertyName] as? String
+        webSiteURL = record[HTLocationSupport.kWebsiteURL.propertyName] as? String
     }
 }
