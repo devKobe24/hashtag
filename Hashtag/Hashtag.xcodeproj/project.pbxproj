@@ -37,7 +37,10 @@
 		CD4556F82AF8BA2C0034AD0B /* Text+.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4556F72AF8BA2C0034AD0B /* Text+.swift */; };
 		CD4556FB2AF8CE570034AD0B /* MenuNameBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4556FA2AF8CE570034AD0B /* MenuNameBackgroundView.swift */; };
 		CD4556FD2AF9D15B0034AD0B /* HTLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4556FC2AF9D15B0034AD0B /* HTLocation.swift */; };
-		CD4557022AFA09A50034AD0B /* Support.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4557012AFA09A50034AD0B /* Support.swift */; };
+		CD4557022AFA09A50034AD0B /* HTLocationSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4557012AFA09A50034AD0B /* HTLocationSupport.swift */; };
+		CD4557042AFA26150034AD0B /* HTProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4557032AFA26150034AD0B /* HTProfile.swift */; };
+		CD4557072AFA271B0034AD0B /* HTProfileSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4557062AFA271B0034AD0B /* HTProfileSupport.swift */; };
+		CD45570A2AFA29800034AD0B /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4557092AFA29800034AD0B /* MockData.swift */; };
 		CDA88A772AF74C7C00680AD7 /* LocationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA88A762AF74C7C00680AD7 /* LocationDetailView.swift */; };
 		CDA88A792AF763FC00680AD7 /* CommonCircleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA88A782AF763FC00680AD7 /* CommonCircleButtonView.swift */; };
 		CDB5E6032AF7305700264CE8 /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB5E6022AF7305700264CE8 /* AvatarView.swift */; };
@@ -77,7 +80,10 @@
 		CD4556F72AF8BA2C0034AD0B /* Text+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Text+.swift"; sourceTree = "<group>"; };
 		CD4556FA2AF8CE570034AD0B /* MenuNameBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuNameBackgroundView.swift; sourceTree = "<group>"; };
 		CD4556FC2AF9D15B0034AD0B /* HTLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTLocation.swift; sourceTree = "<group>"; };
-		CD4557012AFA09A50034AD0B /* Support.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Support.swift; sourceTree = "<group>"; };
+		CD4557012AFA09A50034AD0B /* HTLocationSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTLocationSupport.swift; sourceTree = "<group>"; };
+		CD4557032AFA26150034AD0B /* HTProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTProfile.swift; sourceTree = "<group>"; };
+		CD4557062AFA271B0034AD0B /* HTProfileSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTProfileSupport.swift; sourceTree = "<group>"; };
+		CD4557092AFA29800034AD0B /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
 		CDA88A762AF74C7C00680AD7 /* LocationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailView.swift; sourceTree = "<group>"; };
 		CDA88A782AF763FC00680AD7 /* CommonCircleButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonCircleButtonView.swift; sourceTree = "<group>"; };
 		CDB5E6022AF7305700264CE8 /* AvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
@@ -302,6 +308,7 @@
 			isa = PBXGroup;
 			children = (
 				CD4556FC2AF9D15B0034AD0B /* HTLocation.swift */,
+				CD4557032AFA26150034AD0B /* HTProfile.swift */,
 			);
 			path = Hashtag;
 			sourceTree = "<group>";
@@ -309,6 +316,8 @@
 		CD4556FF2AFA097B0034AD0B /* Supports */ = {
 			isa = PBXGroup;
 			children = (
+				CD4557082AFA29730034AD0B /* MockData */,
+				CD4557052AFA26F00034AD0B /* HTProfile */,
 				CD4557002AFA098B0034AD0B /* HTLocation */,
 			);
 			path = Supports;
@@ -317,9 +326,25 @@
 		CD4557002AFA098B0034AD0B /* HTLocation */ = {
 			isa = PBXGroup;
 			children = (
-				CD4557012AFA09A50034AD0B /* Support.swift */,
+				CD4557012AFA09A50034AD0B /* HTLocationSupport.swift */,
 			);
 			path = HTLocation;
+			sourceTree = "<group>";
+		};
+		CD4557052AFA26F00034AD0B /* HTProfile */ = {
+			isa = PBXGroup;
+			children = (
+				CD4557062AFA271B0034AD0B /* HTProfileSupport.swift */,
+			);
+			path = HTProfile;
+			sourceTree = "<group>";
+		};
+		CD4557082AFA29730034AD0B /* MockData */ = {
+			isa = PBXGroup;
+			children = (
+				CD4557092AFA29800034AD0B /* MockData.swift */,
+			);
+			path = MockData;
 			sourceTree = "<group>";
 		};
 		CDD54DAB2AF65481003EF9CF /* ImageAssets */ = {
@@ -406,17 +431,20 @@
 				CD10E8FF2AF61508001AF0E8 /* AppTabView.swift in Sources */,
 				CD4556DD2AF85B160034AD0B /* CharactersRemainView.swift in Sources */,
 				CDA88A772AF74C7C00680AD7 /* LocationDetailView.swift in Sources */,
+				CD4557072AFA271B0034AD0B /* HTProfileSupport.swift in Sources */,
 				CD4556EA2AF863550034AD0B /* AddressView.swift in Sources */,
 				CD10E9062AF615D9001AF0E8 /* ProfileView.swift in Sources */,
 				CD4556C42AF7A2870034AD0B /* LocationCell.swift in Sources */,
 				CD4556F82AF8BA2C0034AD0B /* Text+.swift in Sources */,
 				CD4556F42AF8B6F40034AD0B /* RepresentativeMenuImageView.swift in Sources */,
-				CD4557022AFA09A50034AD0B /* Support.swift in Sources */,
+				CD4557022AFA09A50034AD0B /* HTLocationSupport.swift in Sources */,
+				CD45570A2AFA29800034AD0B /* MockData.swift in Sources */,
 				CD10E90C2AF61679001AF0E8 /* SFSymbols.swift in Sources */,
 				CD4556F22AF895100034AD0B /* RepresentativeMenuView.swift in Sources */,
 				CD4556FB2AF8CE570034AD0B /* MenuNameBackgroundView.swift in Sources */,
 				CD4556EC2AF864810034AD0B /* StoreDescriptionView.swift in Sources */,
 				CDB5E6032AF7305700264CE8 /* AvatarView.swift in Sources */,
+				CD4557042AFA26150034AD0B /* HTProfile.swift in Sources */,
 				CD4556DA2AF8531B0034AD0B /* CommonNameTextField.swift in Sources */,
 				CD4556D72AF852050034AD0B /* View+.swift in Sources */,
 				CDA88A792AF763FC00680AD7 /* CommonCircleButtonView.swift in Sources */,
