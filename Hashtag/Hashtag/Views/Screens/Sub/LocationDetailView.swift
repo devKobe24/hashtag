@@ -29,6 +29,44 @@ struct LocationDetailView: View {
         "toBusan"
     ]
     
+    var location: HTLocation
+    
+    var address: String {
+        guard let address = location.address else { 
+            return "N/A"
+        }
+        
+        return address
+    }
+    
+    var storeDescription: String {
+        guard let storeDescription = location.storeDescription else {
+            return "N/A"
+        }
+        
+        return storeDescription
+    }
+    
+    var websiteURL: String {
+        guard let webSiteURL = location.webSiteURL else {
+            return "N/A"
+        }
+        
+        return webSiteURL
+    }
+    
+    var locationName: String {
+        guard let locationName = location.name else {
+            return "N/A"
+        }
+        
+        return locationName
+    }
+    
+    init(location: HTLocation) {
+        self.location = location
+    }
+    
     @State private var showingPopover = false
     
     var body: some View {
@@ -39,7 +77,7 @@ struct LocationDetailView: View {
             
             HStack(content: {
                 AddressView(
-                    storeAddress: "Main Street 123",
+                    storeAddress: address,
                     symbolImageName: SFSymbols.mappinAndEllipse.imageName
                 )
                 
@@ -47,7 +85,7 @@ struct LocationDetailView: View {
             })
             .padding(.horizontal)
             
-            StoreDescriptionView(storeDescription: "This is the store description for testing purposes. Hello, our store sells very delicious food. The main menu is Korean food. welcome")
+            StoreDescriptionView(storeDescription: storeDescription)
             
             ZStack(content: {
                 Capsule()
@@ -67,7 +105,7 @@ struct LocationDetailView: View {
                         )
                     })
                     
-                    Link(destination: URL(string: "https://www.apple.com")!,
+                    Link(destination: URL(string: websiteURL)!,
                          label: {
                         CommonCircleButtonView(
                             color: .secondBrandPrimaryColor,
@@ -129,11 +167,11 @@ struct LocationDetailView: View {
             
             Spacer()
         }
-        .navigationTitle("Location Name")
+        .navigationTitle(locationName)
         .navigationBarTitleDisplayMode(.inline)
     }
 }
 
 #Preview {
-    LocationDetailView()
+    LocationDetailView(location: HTLocation(record: MockData.location))
 }

@@ -1,5 +1,4 @@
-//
-//  Support.swift
+//  HTLocationSupport.swift
 //  Hashtag
 //
 //  Created by Minseong Kang on 11/7/23.
@@ -7,7 +6,7 @@
 
 import Foundation
 
-enum Support {
+enum HTLocationSupport {
     case kAddress
     case kBannerAsset
     case kLocation
@@ -15,7 +14,7 @@ enum Support {
     case kName
     case kSquareAsset
     case kStoreDescription
-    case kWebSiteURL
+    case kWebsiteURL
     
     var propertyName: String {
         switch self {
@@ -33,7 +32,7 @@ enum Support {
             return "squareAsset"
         case .kStoreDescription:
             return "storeDescription"
-        case .kWebSiteURL:
+        case .kWebsiteURL:
             return "websiteURL"
         }
     }

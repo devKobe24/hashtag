@@ -8,7 +8,23 @@
 import SwiftUI
 
 struct LocationCell: View {
+    
+    var location: HTLocation
+    var locationName: String {
+        guard let locationName = location.name else {
+            return "N/A"
+        }
+        return locationName
+    }
+    
+    init(location: HTLocation) {
+        self.location = location
+    }
+    
+    
+    
     var body: some View {
+        
         HStack(content: {
             Image(ImageAssets.hashTagSquareAsset.imageName)
                 .resizable()
@@ -18,7 +34,8 @@ struct LocationCell: View {
                 .padding(.vertical, 8)
             
             VStack(alignment: .leading, content: {
-                Text("Test Location Name")
+                
+                Text(locationName)
                     .font(.title2)
                     .fontWeight(.semibold)
                     .lineLimit(1)
@@ -40,5 +57,5 @@ struct LocationCell: View {
 }
 
 #Preview {
-    LocationCell()
+    LocationCell(location: HTLocation(record: MockData.location))
 }
