@@ -20,6 +20,11 @@ struct LocationMapView: View {
             longitudeDelta: 0.01
         )
     )
+    
+    @State private var alertItem: AlertItem?
+    
+    @State private var isPresented: Bool = false
+    
     var body: some View {
         ZStack {
             Map(coordinateRegion: $region)
@@ -31,13 +36,18 @@ struct LocationMapView: View {
                 Spacer()
             }
         }
+        .alert("위치 에러", isPresented: $isPresented, actions: {
+            
+        }, message: {
+            Text("이 위치를 찾을 수 없습니다.\n다시 시도해주세요.")
+        })
         .onAppear {
             CloudKitManager.getLocations { result in
                 switch result {
                 case .success(let locations):
                     print(locations)
-                case .failure(let error):
-                    print(error.localizedDescription)
+                case .failure(_):
+                    isPresented = true
                 }
             }
         }
