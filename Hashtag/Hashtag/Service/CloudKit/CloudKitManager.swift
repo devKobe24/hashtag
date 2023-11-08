@@ -17,6 +17,7 @@ struct CloudKitManager {
         CKContainer.default().publicCloudDatabase.perform(query, inZoneWith: nil) { records, error in
             if let error = error {
                 completion(.failure(error))
+                return
             }
             
             guard let records = records else {

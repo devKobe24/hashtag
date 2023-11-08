@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		CD039BE72AFB7BA800DA57B7 /* CKRecord+.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD039BE62AFB7BA800DA57B7 /* CKRecord+.swift */; };
+		CD039BEA2AFC2FA300DA57B7 /* AlertItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD039BE92AFC2FA300DA57B7 /* AlertItem.swift */; };
+		CD039BEC2AFC302B00DA57B7 /* AlertContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD039BEB2AFC302B00DA57B7 /* AlertContext.swift */; };
 		CD10E8E52AF5FE24001AF0E8 /* HashtagApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD10E8E42AF5FE24001AF0E8 /* HashtagApp.swift */; };
 		CD10E8E92AF5FE25001AF0E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD10E8E82AF5FE25001AF0E8 /* Assets.xcassets */; };
 		CD10E8EC2AF5FE25001AF0E8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD10E8EB2AF5FE25001AF0E8 /* Preview Assets.xcassets */; };
@@ -52,6 +54,8 @@
 
 /* Begin PBXFileReference section */
 		CD039BE62AFB7BA800DA57B7 /* CKRecord+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CKRecord+.swift"; sourceTree = "<group>"; };
+		CD039BE92AFC2FA300DA57B7 /* AlertItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertItem.swift; sourceTree = "<group>"; };
+		CD039BEB2AFC302B00DA57B7 /* AlertContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertContext.swift; sourceTree = "<group>"; };
 		CD10E8E12AF5FE24001AF0E8 /* Hashtag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hashtag.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD10E8E42AF5FE24001AF0E8 /* HashtagApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashtagApp.swift; sourceTree = "<group>"; };
 		CD10E8E82AF5FE25001AF0E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -107,6 +111,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CD039BE82AFC2F9000DA57B7 /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				CD039BE92AFC2FA300DA57B7 /* AlertItem.swift */,
+				CD039BEB2AFC302B00DA57B7 /* AlertContext.swift */,
+			);
+			path = Alert;
+			sourceTree = "<group>";
+		};
 		CD10E8D82AF5FE24001AF0E8 = {
 			isa = PBXGroup;
 			children = (
@@ -220,6 +233,7 @@
 		CD4556C62AF7A6510034AD0B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CD039BE82AFC2F9000DA57B7 /* Alert */,
 				CD4556FE2AF9D15F0034AD0B /* Hashtag */,
 				CD10E9092AF61659001AF0E8 /* Common */,
 			);
@@ -480,6 +494,7 @@
 				CD4556EC2AF864810034AD0B /* StoreDescriptionView.swift in Sources */,
 				CDB5E6032AF7305700264CE8 /* AvatarView.swift in Sources */,
 				CD4557042AFA26150034AD0B /* HTProfile.swift in Sources */,
+				CD039BEC2AFC302B00DA57B7 /* AlertContext.swift in Sources */,
 				CD4F49D22AFB61A800D30E1F /* CloudKitManager.swift in Sources */,
 				CD4556DA2AF8531B0034AD0B /* CommonNameTextField.swift in Sources */,
 				CD4556D72AF852050034AD0B /* View+.swift in Sources */,
@@ -491,6 +506,7 @@
 				CD10E9022AF6156E001AF0E8 /* LocationMapView.swift in Sources */,
 				CD10E8EE2AF5FE25001AF0E8 /* Persistence.swift in Sources */,
 				CD4556D02AF84B9E0034AD0B /* EditImageView.swift in Sources */,
+				CD039BEA2AFC2FA300DA57B7 /* AlertItem.swift in Sources */,
 				CD4556F62AF8B88E0034AD0B /* MenuNameText.swift in Sources */,
 				CD4556E42AF860550034AD0B /* HTButtonView.swift in Sources */,
 				CD4556D52AF84E2E0034AD0B /* ProfileNameText.swift in Sources */,
