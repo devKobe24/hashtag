@@ -18,11 +18,11 @@ struct HTProfile {
     
     init(record: CKRecord) {
         ckRecordID = record.recordID
-        avatar = record[HTProfileSupport.kAvatart.propertyName] as? CKAsset
-        bio = record[HTProfileSupport.kBio.propertyName] as? String
-        companyName = record[HTProfileSupport.kCompanayName.propertyName] as? String
-        firstName = record[HTProfileSupport.kFirstName.propertyName] as? String
-        lastName = record[HTProfileSupport.kLastName.propertyName] as? String
-        isCheckedIn = record[HTProfileSupport.kIsCheckedIn.propertyName] as? CKRecord.Reference
+        avatar = record[HTProfileSupport.kAvatart.key] as? CKAsset
+        bio = record[HTProfileSupport.kBio.key] as? String
+        companyName = record[HTProfileSupport.kCompanayName.key] as? String
+        firstName = record[HTProfileSupport.kFirstName.key] as? String
+        lastName = record[HTProfileSupport.kLastName.key] as? String
+        isCheckedIn = record[HTProfileSupport.kIsCheckedIn.key] as? CKRecord.Reference
     }
 }

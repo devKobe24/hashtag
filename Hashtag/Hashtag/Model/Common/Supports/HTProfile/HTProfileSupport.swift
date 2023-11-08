@@ -15,7 +15,7 @@ enum HTProfileSupport {
     case kIsCheckedIn
     case kLastName
     
-    var propertyName: String {
+    var key: String {
         switch self {
         case .kAvatart:
             return "avatar"
