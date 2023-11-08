@@ -16,7 +16,7 @@ enum HTLocationSupport {
     case kStoreDescription
     case kWebsiteURL
     
-    var propertyName: String {
+    var key: String {
         switch self {
         case .kAddress:
             return "address"
