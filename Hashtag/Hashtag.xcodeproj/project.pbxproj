@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD039BE72AFB7BA800DA57B7 /* CKRecord+.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD039BE62AFB7BA800DA57B7 /* CKRecord+.swift */; };
 		CD10E8E52AF5FE24001AF0E8 /* HashtagApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD10E8E42AF5FE24001AF0E8 /* HashtagApp.swift */; };
 		CD10E8E92AF5FE25001AF0E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD10E8E82AF5FE25001AF0E8 /* Assets.xcassets */; };
 		CD10E8EC2AF5FE25001AF0E8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD10E8EB2AF5FE25001AF0E8 /* Preview Assets.xcassets */; };
@@ -41,6 +42,8 @@
 		CD4557042AFA26150034AD0B /* HTProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4557032AFA26150034AD0B /* HTProfile.swift */; };
 		CD4557072AFA271B0034AD0B /* HTProfileSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4557062AFA271B0034AD0B /* HTProfileSupport.swift */; };
 		CD45570A2AFA29800034AD0B /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4557092AFA29800034AD0B /* MockData.swift */; };
+		CD4F49D22AFB61A800D30E1F /* CloudKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4F49D12AFB61A800D30E1F /* CloudKitManager.swift */; };
+		CD4F49D52AFB62C300D30E1F /* RecordType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4F49D42AFB62C300D30E1F /* RecordType.swift */; };
 		CDA88A772AF74C7C00680AD7 /* LocationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA88A762AF74C7C00680AD7 /* LocationDetailView.swift */; };
 		CDA88A792AF763FC00680AD7 /* CommonCircleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA88A782AF763FC00680AD7 /* CommonCircleButtonView.swift */; };
 		CDB5E6032AF7305700264CE8 /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB5E6022AF7305700264CE8 /* AvatarView.swift */; };
@@ -48,6 +51,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CD039BE62AFB7BA800DA57B7 /* CKRecord+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CKRecord+.swift"; sourceTree = "<group>"; };
 		CD10E8E12AF5FE24001AF0E8 /* Hashtag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hashtag.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD10E8E42AF5FE24001AF0E8 /* HashtagApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashtagApp.swift; sourceTree = "<group>"; };
 		CD10E8E82AF5FE25001AF0E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -84,6 +88,8 @@
 		CD4557032AFA26150034AD0B /* HTProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTProfile.swift; sourceTree = "<group>"; };
 		CD4557062AFA271B0034AD0B /* HTProfileSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTProfileSupport.swift; sourceTree = "<group>"; };
 		CD4557092AFA29800034AD0B /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
+		CD4F49D12AFB61A800D30E1F /* CloudKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitManager.swift; sourceTree = "<group>"; };
+		CD4F49D42AFB62C300D30E1F /* RecordType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordType.swift; sourceTree = "<group>"; };
 		CDA88A762AF74C7C00680AD7 /* LocationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailView.swift; sourceTree = "<group>"; };
 		CDA88A782AF763FC00680AD7 /* CommonCircleButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonCircleButtonView.swift; sourceTree = "<group>"; };
 		CDB5E6022AF7305700264CE8 /* AvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
@@ -120,6 +126,7 @@
 		CD10E8E32AF5FE24001AF0E8 /* Hashtag */ = {
 			isa = PBXGroup;
 			children = (
+				CD4F49CF2AFB612A00D30E1F /* Service */,
 				CD4556C62AF7A6510034AD0B /* Model */,
 				CD10E8FD2AF614F9001AF0E8 /* Views */,
 				CD10E8F82AF6117F001AF0E8 /* Extensions */,
@@ -147,6 +154,7 @@
 				CD10E8F92AF61191001AF0E8 /* Color+.swift */,
 				CD4556D62AF852050034AD0B /* View+.swift */,
 				CD4556F72AF8BA2C0034AD0B /* Text+.swift */,
+				CD039BE62AFB7BA800DA57B7 /* CKRecord+.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -316,6 +324,7 @@
 		CD4556FF2AFA097B0034AD0B /* Supports */ = {
 			isa = PBXGroup;
 			children = (
+				CD4F49D32AFB62AB00D30E1F /* Query */,
 				CD4557082AFA29730034AD0B /* MockData */,
 				CD4557052AFA26F00034AD0B /* HTProfile */,
 				CD4557002AFA098B0034AD0B /* HTLocation */,
@@ -345,6 +354,30 @@
 				CD4557092AFA29800034AD0B /* MockData.swift */,
 			);
 			path = MockData;
+			sourceTree = "<group>";
+		};
+		CD4F49CF2AFB612A00D30E1F /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				CD4F49D02AFB618F00D30E1F /* CloudKit */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		CD4F49D02AFB618F00D30E1F /* CloudKit */ = {
+			isa = PBXGroup;
+			children = (
+				CD4F49D12AFB61A800D30E1F /* CloudKitManager.swift */,
+			);
+			path = CloudKit;
+			sourceTree = "<group>";
+		};
+		CD4F49D32AFB62AB00D30E1F /* Query */ = {
+			isa = PBXGroup;
+			children = (
+				CD4F49D42AFB62C300D30E1F /* RecordType.swift */,
+			);
+			path = Query;
 			sourceTree = "<group>";
 		};
 		CDD54DAB2AF65481003EF9CF /* ImageAssets */ = {
@@ -432,7 +465,9 @@
 				CD4556DD2AF85B160034AD0B /* CharactersRemainView.swift in Sources */,
 				CDA88A772AF74C7C00680AD7 /* LocationDetailView.swift in Sources */,
 				CD4557072AFA271B0034AD0B /* HTProfileSupport.swift in Sources */,
+				CD039BE72AFB7BA800DA57B7 /* CKRecord+.swift in Sources */,
 				CD4556EA2AF863550034AD0B /* AddressView.swift in Sources */,
+				CD4F49D52AFB62C300D30E1F /* RecordType.swift in Sources */,
 				CD10E9062AF615D9001AF0E8 /* ProfileView.swift in Sources */,
 				CD4556C42AF7A2870034AD0B /* LocationCell.swift in Sources */,
 				CD4556F82AF8BA2C0034AD0B /* Text+.swift in Sources */,
@@ -445,6 +480,7 @@
 				CD4556EC2AF864810034AD0B /* StoreDescriptionView.swift in Sources */,
 				CDB5E6032AF7305700264CE8 /* AvatarView.swift in Sources */,
 				CD4557042AFA26150034AD0B /* HTProfile.swift in Sources */,
+				CD4F49D22AFB61A800D30E1F /* CloudKitManager.swift in Sources */,
 				CD4556DA2AF8531B0034AD0B /* CommonNameTextField.swift in Sources */,
 				CD4556D72AF852050034AD0B /* View+.swift in Sources */,
 				CDA88A792AF763FC00680AD7 /* CommonCircleButtonView.swift in Sources */,
